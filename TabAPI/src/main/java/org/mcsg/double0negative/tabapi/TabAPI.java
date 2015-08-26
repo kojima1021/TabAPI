@@ -191,7 +191,7 @@ public class TabAPI extends JavaPlugin implements Listener, CommandExecutor {
         String nameToShow = ((!shuttingdown) ? "$" : "") + msg;
         if (protocolManager.getProtocolVersion(p) >= 47)
         {
-            nameToShow = ((!shuttingdown) ? "$" : "") + ChatColor.DARK_GRAY + "" + slotId + ": " + msg.substring(0, Math.min(msg.length(), 10));
+            nameToShow = ((!shuttingdown) ? "$" : "") +msg.substring(0, Math.min(msg.length(), 10));
         }
         PlayerInfoAction action;
         if (b)
